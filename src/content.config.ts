@@ -7,7 +7,7 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     publishDate: z.string(),
-    author: z.string().default('K2 Curtains and Trading'),
+    author: z.string().default('K2 Curtains Shamka'),
     category: z.enum(['tips', 'maintenance', 'news', 'guides', 'design', 'trends']),
     tags: z.array(z.string()).default([]),
     readingTime: z.string().optional(),

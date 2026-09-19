@@ -40,8 +40,8 @@ export interface Business {
 }
 
 export const business: Business = {
-  name: 'K2 Curtains and Trading',
-  legalName: 'K2 Curtains and Trading',
+  name: 'K2 Curtains Shamka',
+  legalName: 'K2 Curtains Shamka',
   owner: '',
   phone: '+971 55 225 5639',
   phoneHref: 'tel:+971552255639',
@@ -68,7 +68,7 @@ export const business: Business = {
   schemaType: 'LocalBusiness',
   additionalType: 'HomeGoodsStore',
   description:
-    'K2 Curtains and Trading is Abu Dhabi\'s trusted curtain shop specializing in custom curtains, Roman and roller blinds, Venetian blinds, motorized curtains, sofa upholstery, wooden flooring, carpets, wallpapers, and Arabic majlis seating. Serving homes and villas across Al Shamkha, Baniyas, Khalifa City, Yas Island, and surrounding communities with free home consultation and measurement.',
+    'K2 Curtains Shamka is Abu Dhabi\'s trusted curtain shop specializing in custom curtains, Roman and roller blinds, Venetian blinds, motorized curtains, sofa upholstery, wooden flooring, carpets, wallpapers, and Arabic majlis seating. Serving homes and villas across Al Shamkha, Baniyas, Khalifa City, Yas Island, and surrounding communities with free home consultation and measurement.',
   tagline: 'Dress Your Windows. Elevate Your Home.',
 };
 
