@@ -57,7 +57,7 @@ export const business: Business = {
     state: 'Abu Dhabi',
     zip: '',
   },
-  coordinates: { lat: 24.401756664626475, lng: 54.69010095713209 },
+  coordinates: { lat: 24.4577756, lng: 54.529953 },
   hours: [
     { days: 'Monday – Saturday', hours: '10:00 AM – 6:00 PM' },
     { days: 'Sunday', hours: 'Closed' },
