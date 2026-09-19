@@ -6,16 +6,26 @@ import { business } from '../../data/business';
 import { serviceAreas } from '../../data/serviceAreas';
 import { areaUrl, contactUrl } from '../../lib/urls';
 
+function cardStyle(index: number) {
+  const styles = [
+    { bg: 'bg-white', border: 'border-charcoal-200', iconBg: 'bg-brand-50', iconColor: 'text-brand-600' },
+    { bg: 'bg-brand-50/40', border: 'border-brand-200', iconBg: 'bg-white', iconColor: 'text-brand-600' },
+    { bg: 'bg-white', border: 'border-charcoal-200', iconBg: 'bg-accent-50', iconColor: 'text-accent-500' },
+    { bg: 'bg-accent-50/30', border: 'border-accent-200', iconBg: 'bg-white', iconColor: 'text-accent-500' },
+  ];
+  return styles[index % styles.length];
+}
+
 function priorityClasses(priority: string): string {
   switch (priority) {
     case 'primary':
       return 'bg-brand-100 text-brand-700';
     case 'secondary':
-      return 'bg-stone-200 text-stone-700';
+      return 'bg-charcoal-100 text-charcoal-700';
     case 'tertiary':
-      return 'bg-stone-100 text-stone-500';
+      return 'bg-charcoal-50 text-charcoal-500';
     default:
-      return 'bg-stone-100 text-stone-500';
+      return 'bg-charcoal-50 text-charcoal-500';
   }
 }
 
@@ -41,14 +51,14 @@ const areasSchema = {
 >
   <Breadcrumbs crumbs={[{ label: 'Service Areas' }]} />
 
-  <!-- ============ HEADER ============ -->
-  <section class="py-12 lg:py-16">
+  <!-- ============ HERO ============ -->
+  <section class="py-20 lg:py-28">
     <div class="mx-auto max-w-7xl px-5 lg:px-8">
       <div class="max-w-3xl animate-fade-up">
-        <h1 class="font-display text-4xl text-brand-900 sm:text-5xl">
+        <h1 class="font-display text-4xl text-charcoal-950 sm:text-5xl lg:text-6xl">
           Areas We Serve
         </h1>
-        <p class="mt-4 text-lg leading-relaxed text-stone-600">
+        <p class="mt-6 text-lg leading-relaxed text-charcoal-600">
           Based in Abu Dhabi, {business.name} provides premium home décor services — custom curtains, Roman and roller blinds, wooden flooring, sofa upholstery, and Arabic majlis seating — throughout the emirate. We know these communities because we are part of them, and we are committed to fast response times and free home consultations no matter where you live.
         </p>
       </div>
@@ -56,65 +66,76 @@ const areasSchema = {
   </section>
 
   <!-- ============ AREAS GRID ============ -->
-  <section class="pb-16 lg:pb-24">
+  <section class="pb-24 lg:pb-32">
     <div class="mx-auto max-w-7xl px-5 lg:px-8">
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {serviceAreas.map((area, i) => (
-          <a
-            href={areaUrl(area.slug)}
-            class={`card-hover group rounded-xl border border-stone-200 bg-white p-6 animate-fade-up stagger-${Math.min(i + 1, 6)}`}
-          >
-            <div class="flex items-center justify-between">
-              <h2 class="font-display text-lg text-brand-900">{area.name}</h2>
-              <span class={`inline-block rounded-full px-2 py-0.5 text-[11px] font-semibold capitalize ${priorityClasses(area.priority)}`}>
-                {area.priority}
-              </span>
-            </div>
-            <p class="mt-1 text-sm text-stone-500">{area.county}</p>
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {serviceAreas.map((area, i) => {
+          const style = cardStyle(i);
+          return (
+            <a
+              href={areaUrl(area.slug)}
+              class={`group rounded-2xl border ${style.border} ${style.bg} p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg animate-fade-up stagger-${Math.min(i + 1, 6)}`}
+            >
+              <div class="flex items-center justify-between">
+                <div class={`inline-flex items-center justify-center rounded-xl ${style.iconBg} p-2.5`}>
+                  <Icon name="lucide:map-pin" class={`size-5 ${style.iconColor}`} />
+                </div>
+                <span class={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-semibold capitalize ${priorityClasses(area.priority)}`}>
+                  {area.priority}
+                </span>
+              </div>
 
-            <div class="mt-3 flex items-center gap-4 text-sm text-stone-600">
-              <span class="flex items-center gap-1.5">
-                <Icon name="lucide:users" class="size-4 text-stone-400" />
-                {area.population.toLocaleString()}
-              </span>
-              <span class="flex items-center gap-1.5">
-                <Icon name="lucide:clock" class="size-4 text-brand-500" />
-                {area.responseTime}
-              </span>
-            </div>
+              <h2 class="mt-4 font-display text-xl text-charcoal-950 group-hover:text-brand-600 transition-colors">
+                {area.name}
+              </h2>
+              <p class="mt-1 text-sm text-charcoal-500">{area.county}</p>
 
-            <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-stone-500">
-              {area.description}
-            </p>
-          </a>
-        ))}
+              <div class="mt-4 flex items-center gap-4 text-sm text-charcoal-600">
+                <span class="flex items-center gap-1.5">
+                  <Icon name="lucide:users" class="size-4 text-charcoal-400" />
+                  {area.population.toLocaleString()}
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <Icon name="lucide:clock" class="size-4 text-brand-600" />
+                  {area.responseTime}
+                </span>
+              </div>
+
+              <p class="mt-3 line-clamp-2 text-sm leading-relaxed text-charcoal-500">
+                {area.description}
+              </p>
+            </a>
+          );
+        })}
       </div>
     </div>
   </section>
 
-  <!-- ============ CTA ============ -->
-  <section class="bg-brand-900">
-    <div class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16">
-      <div class="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
-        <div>
-          <h2 class="font-display text-3xl text-white">Not Sure If We Cover Your Area?</h2>
-          <p class="mt-2 text-brand-200">
+  <!-- ============ CTA BANNER ============ -->
+  <section class="bg-charcoal-950">
+    <div class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
+      <div class="flex flex-col items-center gap-8 text-center sm:flex-row sm:justify-between sm:text-left">
+        <div class="max-w-xl">
+          <h2 class="font-display text-3xl text-white sm:text-4xl">
+            Not Sure If We Cover Your Area?
+          </h2>
+          <p class="mt-3 text-charcoal-400">
             Get in touch. If you are anywhere in Abu Dhabi, we can visit your home with fabric samples and a measuring tape.
           </p>
         </div>
-        <div class="flex shrink-0 flex-wrap gap-4">
+        <div class="flex shrink-0 flex-wrap justify-center gap-4">
           <a
             href={business.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 rounded-lg bg-accent-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-accent-600"
+            class="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-accent-600"
           >
             <Icon name="lucide:message-circle" class="size-5" />
             WhatsApp
           </a>
           <a
             href={contactUrl()}
-            class="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white/20"
+            class="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/20"
           >
             Contact Us
           </a>

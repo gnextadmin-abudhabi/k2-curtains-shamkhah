@@ -23,11 +23,9 @@ const { title, description, canonicalUrl, ogImage, schema, noindex } = Astro.pro
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Favicons -->
-    <link rel="icon" href="/images/hero-homepage.webp" sizes="32x32" />
-    <link rel="apple-touch-icon" href="/images/hero-homepage.webp" />
+    <link rel="icon" href="/images/logo-small.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/images/logo-small.png" />
 
-    <!-- Google Fonts: DM Serif Display + DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,7 +33,6 @@ const { title, description, canonicalUrl, ogImage, schema, noindex } = Astro.pro
       rel="stylesheet"
     />
 
-    <!-- SEO Head -->
     <SEO
       title={title}
       description={description}
@@ -46,7 +43,7 @@ const { title, description, canonicalUrl, ogImage, schema, noindex } = Astro.pro
     />
   </head>
 
-  <body class="flex min-h-screen flex-col bg-stone-50 text-stone-900 antialiased font-body">
+  <body class="flex min-h-screen flex-col bg-stone-50 text-charcoal-900 antialiased font-body">
     <Header />
     <main class="flex-1">
       <slot />
