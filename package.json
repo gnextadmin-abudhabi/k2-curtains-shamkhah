@@ -1,0 +1,25 @@
+{
+  "name": "curtain-shop-abu-dhabi",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/sitemap": "^3.7.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "astro": "^5.17.2",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.91",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "sharp": "^0.33.0"
+  }
+}
