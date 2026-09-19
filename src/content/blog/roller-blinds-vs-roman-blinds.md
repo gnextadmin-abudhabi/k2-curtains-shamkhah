@@ -2,7 +2,7 @@
 title: "Roller Blinds vs Roman Blinds: Which Is Right for You?"
 description: "Compare roller blinds and Roman blinds on style, function, price, and maintenance to decide which window treatment suits your Abu Dhabi home best."
 publishDate: "2026-09-10"
-author: "K2 Curtains and Trading"
+author: "K2 Curtains Shamka"
 category: "tips"
 tags: ["roller blinds", "roman blinds", "window treatments", "comparison", "Abu Dhabi"]
 readingTime: "5 min read"
@@ -64,4 +64,4 @@ Many of our clients in Al Raha and Khalifa City install Roman blinds in bedrooms
 
 ## Book Your Free Consultation
 
-Still unsure? [Contact K2 Curtains and Trading](/contact/) for a free in-home visit. We bring samples of both roller and Roman blinds so you can compare fabrics, colours, and operations in your own lighting.
+Still unsure? [Contact K2 Curtains Shamka](/contact/) for a free in-home visit. We bring samples of both roller and Roman blinds so you can compare fabrics, colours, and operations in your own lighting.

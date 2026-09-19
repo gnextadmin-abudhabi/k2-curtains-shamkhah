@@ -15,7 +15,7 @@
         },
         "author": {
           "type": "string",
-          "default": "K2 Curtains and Trading"
+          "default": "K2 Curtains Shamka"
         },
         "category": {
           "type": "string",

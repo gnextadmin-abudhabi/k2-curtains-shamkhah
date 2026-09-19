@@ -2,14 +2,14 @@
 title: "How to Choose the Perfect Curtains for Your Abu Dhabi Home"
 description: "A complete guide to selecting the right curtains for Abu Dhabi's climate, from blackout fabrics to sheer elegance. Learn about fabric types, lining options, and heading styles."
 publishDate: "2026-09-15"
-author: "K2 Curtains and Trading"
+author: "K2 Curtains Shamka"
 category: "guides"
 tags: ["curtains", "blackout", "sheer", "home décor", "Abu Dhabi"]
 readingTime: "6 min read"
 featured: true
 ---
 
-Choosing curtains for your Abu Dhabi home is about more than just colour and pattern. The intense sunlight, high temperatures, and modern architectural styles all play a role in finding the perfect window treatment. At K2 Curtains and Trading, we have helped thousands of homeowners across the emirate dress their windows beautifully and practically. Here is everything you need to know.
+Choosing curtains for your Abu Dhabi home is about more than just colour and pattern. The intense sunlight, high temperatures, and modern architectural styles all play a role in finding the perfect window treatment. At K2 Curtains Shamka, we have helped thousands of homeowners across the emirate dress their windows beautifully and practically. Here is everything you need to know.
 
 ## Understand Your Light Control Needs
 

@@ -2,14 +2,14 @@
 title: "Wooden Flooring Trends for Abu Dhabi Villas in 2026"
 description: "Discover the top wooden flooring trends for 2026, from wide-plank engineered oak to herringbone parquet. Find the perfect floor for your Abu Dhabi villa."
 publishDate: "2026-09-05"
-author: "K2 Curtains and Trading"
+author: "K2 Curtains Shamka"
 category: "news"
 tags: ["wooden flooring", "engineered oak", "parquet", "flooring trends", "2026"]
 readingTime: "7 min read"
 featured: false
 ---
 
-Wooden flooring continues to dominate villa interiors across Abu Dhabi, and 2026 brings exciting new directions in colour, format, and finish. At K2 Curtains and Trading, we install engineered wood, laminate, SPC, and parquet flooring in homes from Al Shamkha to Yas Island. Here are the trends our clients are asking for this year.
+Wooden flooring continues to dominate villa interiors across Abu Dhabi, and 2026 brings exciting new directions in colour, format, and finish. At K2 Curtains Shamka, we install engineered wood, laminate, SPC, and parquet flooring in homes from Al Shamkha to Yas Island. Here are the trends our clients are asking for this year.
 
 ## Wide-Plank Engineered Oak
 
