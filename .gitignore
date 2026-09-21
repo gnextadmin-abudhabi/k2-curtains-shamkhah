@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Astro
+.astro/
+
+# Firecrawl reference data
+.firecrawl/
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+.env.*
